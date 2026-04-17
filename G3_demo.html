@@ -119,6 +119,13 @@
   .ai-badge{display:flex;align-items:center;gap:3px;font-size:10px;color:#9ca3af;margin-top:8px;border-top:1px solid #e5e7eb;padding-top:8px;}
   .ai-badge svg{width:12px;height:12px;flex-shrink:0;}
 
+
+  .expand-btn{border:none;background:none;color:#4b8bd6;font-size:12px;font-weight:600;cursor:pointer;padding:2px 0;margin-left:2px;font-family:inherit;}
+  .expand-btn:active{opacity:0.6;}
+
+  .spoiler-tag{display:inline-flex;align-items:center;gap:3px;font-size:10px;color:#e67e22;background:#fef3e2;padding:2px 7px;border-radius:4px;font-weight:600;margin-left:8px;white-space:nowrap;}
+  .spoiler-tag svg{width:11px;height:11px;flex-shrink:0;}
+  .review-stars-row{display:flex;align-items:center;margin-bottom:6px;}
 </style>
 </head>
 <body>
@@ -134,7 +141,7 @@
       <h1 class="movie-title">遠い窓</h1>
       <div class="movie-meta"><span class="meta-tag">ヒューマンドラマ</span><span class="meta-tag">2024年</span><span class="meta-tag">126分</span></div>
       <div class="rating-row"><div class="stars"><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star half" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><span class="rating-num">3.8</span><span class="review-count-top">（842件）</span></div>
-      <p class="movie-desc">ある地方都市を舞台に、偶然再会した旧友二人の数日間を描くヒューマンドラマ。それぞれの人生に生まれた距離と、言葉にならない感情を静かに映し出す。</p>
+      <p class="movie-desc">海沿いの小さな地方都市。東京で暮らす翻訳家の昭人は、母の法事で十数年ぶりに故郷を訪れる。商店街の片隅で偶然再会したのは、かつて一番近くにいた友人・修一だった。たった数日間の再会の中で、二人はすれ違った時間と、あの頃言えなかった言葉に少しずつ向き合っていく——。</p>
     </div>
 
     <div class="action-bar">
@@ -174,15 +181,15 @@
       <div class="sp-content" id="content-sp">
         <div class="topic-acc open" onclick="toggleAcc(this)">
           <div class="topic-trigger"><div class="topic-trigger-left"><span class="topic-dot"></span><span class="topic-name">映像・音楽の評価</span></div><svg class="topic-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-          <div class="topic-detail"><p>地方の風景を活かした撮影や光の演出、音楽が高く評価されています。日常を美しく切り取る映像は多くのレビューで称賛されています。</p></div>
+          <div class="topic-detail"><p>海沿いの地方都市の風景を活かした撮影が高く評価されています。自然光を活かした柔らかい映像と、劇伴の控えめながら心に残る音楽が、作品全体の空気感を作り上げていると称賛する声が多く見られます。</p></div>
         </div>
         <div class="topic-acc" onclick="toggleAcc(this)">
           <div class="topic-trigger"><div class="topic-trigger-left"><span class="topic-dot"></span><span class="topic-name">物語・展開について</span></div><svg class="topic-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-          <div class="topic-detail"><p>序盤はゆったりしたテンポですが、後半に二人の関係に転機が訪れ、空気が変わる展開に引き込まれたという声が多く見られます。</p></div>
+          <div class="topic-detail"><p>序盤はゆったりした日常描写が続きますが、後半に入ると修一が過去の本音を打ち明ける場面をきっかけに二人の関係が大きく動きます。終盤、昭人が窓越しに街を見つめるシーンでタイトルの意味が明かされる構成に、多くのレビューが心を動かされたと語っています。</p></div>
         </div>
         <div class="topic-acc" onclick="toggleAcc(this)">
           <div class="topic-trigger"><div class="topic-trigger-left"><span class="topic-dot"></span><span class="topic-name">演技・余韻</span></div><svg class="topic-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-          <div class="topic-detail"><p>主演二人の繊細な距離感の演技が好評です。終盤のシーンで涙したという感想もあり、観終わった後の余韻が深いと評価されています。</p></div>
+          <div class="topic-detail"><p>主演二人の繊細な距離感の演技が好評です。特にセリフのない場面での表情や間の取り方が自然で、言葉にならない感情が画面から伝わるという感想が目立ちます。終盤のシーンで涙したという声も多く、観終わった後に深い余韻が残る作品だと評価されています。</p></div>
         </div>
       </div>
       <div class="ai-badge"><svg viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>AIがレビューを要約しています</div>
@@ -191,24 +198,36 @@
 
       <div class="review-card">
         <div class="review-header"><div class="reviewer-avatar">M</div><span class="reviewer-name">miko_film</span><span class="review-date">2024/11/12</span></div>
-        <div class="review-stars"><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div class="review-stars-row"><div class="review-stars"><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div></div>
         <p class="review-body">映像がとにかく美しい。地方の風景と光の使い方が印象的で、それだけでも観る価値がある。序盤は少しゆっくりだけど、後半に向けて引き込まれた。</p>
         <div class="review-helpful"><button class="helpful-btn" onclick="this.style.color='#1c2b3a';showToast('参考になったと評価しました')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>参考になった 12</button></div>
       </div>
-
       <div class="review-card">
         <div class="review-header"><div class="reviewer-avatar">T</div><span class="reviewer-name">taku_reviews</span><span class="review-date">2024/11/08</span></div>
-        <div class="review-stars"><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-        <p class="review-body">雰囲気は良いけど、テンポがゆっくりすぎて途中で少しだれた。もう少しコンパクトにまとまっていれば評価は上がったと思う。ただ、役者の演技は確かに良い。</p>
+        <div class="review-stars-row"><div class="review-stars"><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><span class="spoiler-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>ネタバレを含む</span></div>
+        <p class="review-body"><span>雰囲気は良いけど、テンポがゆっくりすぎて途中で少しだれた。もう少しコンパクトにまとまっていれば評価は上がったと思う。ただ、役者の演技は確かに</span><span id="review-1-rest" style="display:none;">良い。特に主演の表情の作り方が自然で、セリフがない場面でも感情が伝わってくる。音楽の使い方も丁寧で、派手さはないけど場面に合っていた。後半で修一が本音を打ち明ける場面は思わず息を呑んだ。個人的には、もう少し物語に起伏があればもっと入り込めたかなと感じた。静かな映画が好きな人には合うと思うけど、エンタメ的な刺激を求める人には少し退屈に感じるかもしれない。</span><span id="review-1-dots">...</span><button class="expand-btn" id="review-1-btn" onclick="expandReview('review-1')">すべて表示</button></p>
         <div class="review-helpful"><button class="helpful-btn" onclick="this.style.color='#1c2b3a';showToast('参考になったと評価しました')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>参考になった 8</button></div>
       </div>
-
       <div class="review-card">
         <div class="review-header"><div class="reviewer-avatar">Y</div><span class="reviewer-name">yui_cinema</span><span class="review-date">2024/10/29</span></div>
-        <div class="review-stars"><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div class="review-stars-row"><div class="review-stars"><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div></div>
         <p class="review-body">観終わった後、しばらく余韻が残った。主演二人の距離感の演技が本当に繊細で、言葉にしきれない感情がちゃんと伝わってくる。音楽も素晴らしい。</p>
         <div class="review-helpful"><button class="helpful-btn" onclick="this.style.color='#1c2b3a';showToast('参考になったと評価しました')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>参考になった 21</button></div>
       </div>
+      <div class="review-card">
+        <div class="review-header"><div class="reviewer-avatar">K</div><span class="reviewer-name">kenta_0922</span><span class="review-date">2024/10/25</span></div>
+        <div class="review-stars-row"><div class="review-stars"><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star half" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><span class="spoiler-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>ネタバレを含む</span></div>
+        <p class="review-body"><span>正直、好みが分かれる作品だと思う。静かな映画が好きなら刺さるけど、展開を求める人には物足りないかも。個人的には、終盤の二人のシーンで不意に涙</span><span id="review-3-rest" style="display:none;">が出た。序盤の日常描写が丁寧すぎてややだれる部分もあったけど、それがあるからこそ後半の感情の動きが際立つ構成になっている。ラスト近くで昭人が窓越しに街を見つめるシーンは、タイトルの意味がようやくわかって胸に来た。地方のロケーションがとても良くて、知らない街なのにどこか懐かしい気持ちになる。万人受けはしないけれど、刺さる人には深く刺さる映画だと思う。</span><span id="review-3-dots">...</span><button class="expand-btn" id="review-3-btn" onclick="expandReview('review-3')">すべて表示</button></p>
+        <div class="review-helpful"><button class="helpful-btn" onclick="this.style.color='#1c2b3a';showToast('参考になったと評価しました')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>参考になった 15</button></div>
+      </div>
+      <div class="review-card">
+        <div class="review-header"><div class="reviewer-avatar">S</div><span class="reviewer-name">saki_movielover</span><span class="review-date">2024/10/18</span></div>
+        <div class="review-stars-row"><div class="review-stars"><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div></div>
+        <p class="review-body">撮影と照明がすごく丁寧。日常の何気ない場面を、こんなに美しく撮れるんだと感心した。物語の後半で空気が変わる瞬間があって、そこからは目が離せなかった。</p>
+        <div class="review-helpful"><button class="helpful-btn" onclick="this.style.color='#1c2b3a';showToast('参考になったと評価しました')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>参考になった 9</button></div>
+      </div>
+
+
 
       <button class="more-btn" onclick="showToast('すべてのレビューを読み込みます')">すべてのレビューを見る</button>
     </div>
@@ -242,6 +261,12 @@ function switchSpoiler(mode){
   document.querySelectorAll('.topic-acc.open').forEach(function(el){el.classList.remove('open');});
   var active = document.querySelector('.sp-content.active');
   if(active){var first=active.querySelector('.topic-acc');if(first)first.classList.add('open');}
+}
+
+function expandReview(id){
+  document.getElementById(id+'-rest').style.display='inline';
+  document.getElementById(id+'-dots').style.display='none';
+  document.getElementById(id+'-btn').style.display='none';
 }
 </script>
 </body>
